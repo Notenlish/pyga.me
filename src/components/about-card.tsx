@@ -1,10 +1,8 @@
-import styles from '@/styles/about-card.module.css';
-
 export default function AboutCard(props: any) {
   return (
-    <div className={styles.card}>
-      <div className={styles.label}>{props.label}</div>
-      <div className={styles.desc}>{props.desc}</div>
+    <div className="w-80 m-15 p-10">
+      <div className="font-bold text-xl">{props.label}</div>
+      <div className="font-base">{props.desc}</div>
     </div>
   );
 }

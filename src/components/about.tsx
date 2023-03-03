@@ -1,9 +1,8 @@
-import styles from '@/styles/about.module.css';
 import AboutCard from './about-card';
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div className="block justify-center md:flex">
       <AboutCard
         label="Community"
         desc="There are plenty of Discord servers, articles, books,

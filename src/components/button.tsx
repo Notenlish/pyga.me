@@ -1,4 +1,3 @@
-import styles from '@/styles/button.module.css';
 import React from 'react';
 
 interface ButtonProps {
@@ -15,8 +14,8 @@ export default class Button extends React.Component<ButtonProps, any> {
   render() {
     return (
       <a href={this.props.link}>
-        <div className={styles.button}>
-          <div style={{ fontSize: this.props.fontSize }}>{this.props.text}</div>
+        <div className="ml-0 mr-2 p-3 bg-lime-700 rounded-md font-bold duration-500 hover:bg-lime-900">
+          <div className={`${this.props.fontSize}`}>{this.props.text}</div>
         </div>
       </a>
     );
