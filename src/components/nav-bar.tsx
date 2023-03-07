@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '@/styles/nav-bar.module.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(true);
@@ -9,11 +10,11 @@ export default function Navbar() {
   }
 
   return (
-    <div className={styles.nav}>
-      <div className={styles.title}>
-        <a href="">pygame</a>
+    <div className="flex items-center justify-between text-white h-1/5 px-7">
+      <div className="hidden text-2xl font-bold sm:block">
+        <Link href="/">pygame</Link>
       </div>
-      <div className={styles.mobilemenuicon} onClick={handleMenuClick}>
+      <div className="block sm:none" onClick={handleMenuClick}>
         <span className="material-symbols-outlined">menu</span>
       </div>
       <div className={isOpen ? styles.routes : styles.mobileroutes}>
